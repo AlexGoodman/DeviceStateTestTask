@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "DbProviderName": "SqlServer.2017",
+    "DbConnectionString": "Server=DESKTOP-TEST123;Database=DataBaseName;Trusted_Connection=True;Enlist=False;",
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
+  }
+}
