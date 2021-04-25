@@ -26,7 +26,7 @@ namespace DeviceStateTestTask.WebService.Services
             while (!stoppingToken.IsCancellationRequested)
             {                
                 await this._hubContext.Clients.All.SendAsync(TrackHub.SEND_MESSAGE_TYPE); 
-                await Task.Delay(1000 * 5, stoppingToken);
+                await Task.Delay(1000 * 5 * 60, stoppingToken);
             }
         }
     }

@@ -43,8 +43,7 @@ namespace DeviceStateTestTask.ConsoleApp.Services
                 .Build();
             
             connection.On("DeviceInfoRequest", async () =>
-            {                
-                Console.WriteLine("DeviceInfoRequest");
+            {                                
                 await connection.InvokeAsync("DeviceInfoResponse", new Device {
                     ComputerName = Environment.MachineName,
                     TimeZone = System.TimeZoneInfo.Local.ToString(),
